@@ -14,7 +14,7 @@ FROM nginx:stable-alpine
 
 # 설정한 nginx 파일을 복사
 COPY --from=builder /usr/src/app/config/nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
-# 위에서 생성한 빌드 결과물을 nginx의 폴더로 이동
+# 위에서 실행한 빌드의 결과물을 nginx의 폴더로 이동
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
 # 3000포트 오픈하고 nginx 실행

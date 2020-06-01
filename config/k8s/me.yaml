@@ -23,7 +23,7 @@ spec:
 apiVersion: v1	
 kind: Service	
 metadata:	
-  name: me-dev	
+  name: me
   labels:	
     run: me
 spec:	
