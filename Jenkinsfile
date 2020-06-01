@@ -1,6 +1,6 @@
 // ref: https://plugins.jenkins.io/kubernetes/
 podTemplate(containers: [
-    containerTemplate(name: 'yarn', image:'yarnpkg/node-yarn', command: 'cat', ttyEnabled: true),
+    containerTemplate(name: 'node', image:'node:10.20.1', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.8.8', command: 'cat', ttyEnabled: true),
 ],
@@ -16,9 +16,9 @@ volumes: [
         }
 
         stage('Run test') {
-            container('yarn') {
-                sh "yarn test --watchAll"
-                sh "q"
+            container('node') {
+                sh "npm install"
+                sh "npm run test"
             }
         }
 
