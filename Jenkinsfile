@@ -42,7 +42,10 @@ volumes: [
         stage('Apply kubernetes') {
             container('kubectl') {
                 sh """
-                    kubectl version
+                    kubectl get pods
+                    kubectl config get-contexts
+                    kubectl config current-context
+                    kubectl config set-context --current --namespace=dev
                     kubectl set image deployment/me me=${image}
                 """
             }
