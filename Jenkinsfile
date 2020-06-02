@@ -16,12 +16,12 @@ volumes: [
             checkout scm
         }
 
-        stage('Run test') {
-            container('node') {
-                sh "npm install"
-                sh "npm run test"
-            }
-        }
+        // stage('Run test') {
+        //     container('node') {
+        //         sh "npm install"
+        //         sh "npm run test"
+        //     }
+        // }
 
         stage('Build and Push docker image') {
             container('docker') {
@@ -45,7 +45,7 @@ volumes: [
                     kubectl get pods
                     kubectl get deploy
                     kubectl get svc
-                    
+
                     kubectl set image deployment/me me=${image} -n dev
                 """
             }
