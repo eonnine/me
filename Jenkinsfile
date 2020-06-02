@@ -45,6 +45,7 @@ volumes: [
                     kubectl get pods
                     kubectl get deploy
                     kubectl get svc
+                    
                     kubectl set image deployment/me me=${image} -n dev
                 """
             }
