@@ -8,7 +8,8 @@ volumes: [
   hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock')
 ]) {
     node(POD_LABEL) {
-        def repo = "jeg910716/me"
+        def uuid = UUID.randomUUID().toString()
+        def image = "jeg910716/me-${uuid}"
 
         stage('Checkout github branch') {
             // Get some code from a Git repository
@@ -32,8 +33,8 @@ volumes: [
                 ]])  {
                     sh """
                         docker login -u ${DOCKER_HUB_USER} -p ${DOCKER_HUB_PASSWORD}
-                        docker build -t ${repo} .
-                        docker push ${repo}
+                        docker build -t ${image} .
+                        docker push ${image}
                     """
                 }
             }
@@ -41,7 +42,7 @@ volumes: [
         stage('Apply kubernetes') {
             container('kubectl') {
                 sh """
-                    kubectl apply -f ./config/k8s/me.yaml --validate=false
+                    kubectl set image deployment me me=${image}
                 """
             }
         }
