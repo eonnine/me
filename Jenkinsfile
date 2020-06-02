@@ -42,7 +42,7 @@ volumes: [
         stage('Apply kubernetes') {
             container('kubectl') {
                 sh """
-                    kubectl set image deployment me me=${image}
+                    kubectl set image deployment me me=${image} -n dev
                 """
             }
         }
