@@ -2,7 +2,7 @@
 podTemplate(containers: [
     containerTemplate(name: 'node', image:'node:10.20.1', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true),
-    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.8.8', command: 'cat', ttyEnabled: true),
+    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.18.3', command: 'cat', ttyEnabled: true),
 ],
 volumes: [
   hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock')
@@ -43,10 +43,9 @@ volumes: [
             container('kubectl') {
                 sh """
                     kubectl get pods
-                    kubectl config get-contexts
-                    kubectl config current-context
-                    kubectl config set-context --current --namespace=dev
-                    kubectl set image deployment/me me=${image}
+                    kubectl get deploy
+                    kubectl get svc
+                    kubectl set image deployment/me me=${image} -n dev
                 """
             }
         }
