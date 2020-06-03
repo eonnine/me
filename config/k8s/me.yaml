@@ -35,8 +35,7 @@ spec:
   ports:	
   - port: 3000	
     targetPort: 3000	
-    protocol: TCP	
-  type: LoadBalancer 
+    protocol: TCP
 ---
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
@@ -51,7 +50,7 @@ spec:
   - host: localhost
     http:
       paths:
-      - path: /
+      - path: /me
         backend:
           serviceName: sample
           servicePort: 3000
