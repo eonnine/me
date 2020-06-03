@@ -33,7 +33,30 @@ spec:
   selector:	
     run: me
   ports:	
-  - port: 80	
+  - port: 3000	
     targetPort: 3000	
     protocol: TCP	
   type: LoadBalancer 
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: me
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  rules:
+  - host: localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: sample
+          servicePort: 3000
+  # tls:
+  # - hosts:
+  #   - localhost
+  #   secretName: tls-me-secret
+  
