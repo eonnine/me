@@ -43,7 +43,7 @@ metadata:
   name: me
   annotations:
     kubernetes.io/ingress.class: nginx
-    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
 spec:
   rules:
@@ -52,7 +52,7 @@ spec:
       paths:
       - path: /me
         backend:
-          serviceName: sample
+          serviceName: me
           servicePort: 3000
   # tls:
   # - hosts:
