@@ -8,8 +8,7 @@ volumes: [
   hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock')
 ]) {
     node(POD_LABEL) {
-        def uuid = UUID.randomUUID().toString()
-        def image = "jeg910716/me-${uuid}"
+        def image = "jeg910716/me-${BUILD_NUMBER}"
 
         stage('Checkout github branch') {
             // Get some code from a Git repository
