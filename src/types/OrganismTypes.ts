@@ -3,10 +3,11 @@ export interface HeaderProps {
 }
 
 export interface ArticleContent {
-  key: number;
+  key: string;
   title: string;
   icon: string;
-  section: JSX.Element;
+  section?: JSX.Element;
+  [key: string]: any;
 }
 export interface ArticleProps {
   title: string;

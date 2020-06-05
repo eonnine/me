@@ -6,11 +6,8 @@ $subFontSize: 1rem;
 .title-container {
   .article-title {
     position: relative;
-    font-size: $fontSize;
-    font-weight: 400;
+    font-weight: 500;
     color: $title-color-sub;
-
-    @include responsiveFont($fontSize);
 
     span {
       position: relative;
@@ -28,11 +25,8 @@ $subFontSize: 1rem;
   }
 
   .article-title-sub {
-    font-size: $subFontSize;
     font-weight: 400;
     margin-left: 15px;
     color: $title-color-sub;
-
-    @include responsiveFont($subFontSize);
   }
 }

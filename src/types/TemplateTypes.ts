@@ -11,3 +11,15 @@ export interface DashboardProps {
   introduce: DashboardContent;
   style: DashboardContent;
 }
+
+export interface Skill {
+  key: string;
+  label: string;
+  img: string;
+}
+
+export interface SectionValues {
+  key: string;
+  title: string;
+  items: Array<Skill>;
+}

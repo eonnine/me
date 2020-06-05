@@ -5,14 +5,14 @@
     padding: 0 5%;
 
     @media (max-width: $viewportMedium) {
-      padding: 15px 60px;
+      padding: 0 15px;
     }
 
     @media (max-width: $viewportSmall) {
-      padding: 10px 20px;
+      padding: 0 5px;
     }
 
-    .row-1 {
+    .divide-row {
       display: flex;
       justify-content: space-between;
 

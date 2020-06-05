@@ -11,6 +11,13 @@ export interface IconProps {
 export interface TitleProps {
   /** is subtitle **/
   sub?: boolean;
+  /** heading size **/
+  h?: number;
   value: string;
-  prefix?: JSX.Element;
+  prefix?: JSX.Element | string;
+}
+
+export interface CardProps {
+  label: JSX.Element | string;
+  body: JSX.Element;
 }

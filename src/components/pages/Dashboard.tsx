@@ -3,6 +3,19 @@ import { WithMainLayout } from "components/layouts";
 import { DashboardTemplate } from "components/templates/layout";
 import { values } from "./configs";
 
+const makeIntroduceSectionRender = ({ key }: { key: string }) => {
+  switch (key) {
+    case "introduce":
+      return <h2>안녕하세요.</h2>;
+    case "skill":
+      return <h2>Skill</h2>;
+    case "style":
+      return <h2>Style</h2>;
+    default:
+      return <></>;
+  }
+};
+
 function Dashboard(props: React.ComponentProps<any>) {
   const data = {
     sider: {
@@ -12,15 +25,7 @@ function Dashboard(props: React.ComponentProps<any>) {
       title: "History",
       data: [],
     },
-    introduce: {
-      title: values.introduceValues.title,
-      data: values.introduceValues.sections.map((sectionValue) => {
-        return {
-          ...sectionValue,
-          section: <p>RenderItem</p>,
-        };
-      }),
-    },
+    introduce: values.introduceValues,
     style: {
       title: "Style",
       data: [],

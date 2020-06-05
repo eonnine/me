@@ -5,9 +5,9 @@ import "styles/components/atoms/display/Icon.scss";
 
 function Icon(props: atomTypes.IconProps) {
   return (
-    <i className="icon-container">
+    <div className="icon-container">
       <img {...props} className="icon" alt="" />
-    </i>
+    </div>
   );
 }
 

@@ -4,6 +4,7 @@ $maxWidth: 1.2rem;
 $maxHeight: 1.2rem;
 
 .icon-container {
+  display: inline;
   margin-right: 7px;
 
   .icon {
@@ -12,7 +13,6 @@ $maxHeight: 1.2rem;
     max-width: $maxWidth;
     max-height: $maxHeight;
     margin-bottom: 3px;
-
     @include responsiveImage($maxWidth, $maxHeight);
   }
 }

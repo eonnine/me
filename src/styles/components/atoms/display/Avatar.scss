@@ -10,7 +10,6 @@ $maxHeight: 150px;
     width: 100%;
     max-width: $maxWidth;
     max-height: $maxHeight;
+    @include responsiveImage($maxWidth, $maxHeight);
   }
-
-  @include responsiveImage($maxWidth, $maxHeight);
 }

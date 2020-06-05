@@ -1,15 +1,16 @@
 import React from "react";
-import { Title } from "components/atoms/entry";
+import { Title } from "components/atoms/display";
 import { Icon } from "components/atoms/display";
+import { moleculeTypes } from "types";
 
 import "styles/components/molecules/display/Section.scss";
 
-function Section(props: any) {
-  const { title, icon, content } = props;
+function Section(props: moleculeTypes.SectionProps) {
+  const { sub = true, title, icon = "", content, h = 3 } = props;
 
   return (
     <section className="section-container">
-      <Title sub={true} value={title} prefix={<Icon src={icon} />} />
+      <Title sub={sub} h={h} value={title} prefix={<Icon src={icon} />} />
       <div className="content">{content}</div>
     </section>
   );
