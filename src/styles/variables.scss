@@ -2,6 +2,7 @@ $viewportMedium: 1100px;
 $viewportSmall: 500px;
 
 $line-color-base: rgba(215, 215, 215, 0.7);
+$title-color-sub: rgb(23, 49, 77);
 
 @mixin responsiveFont($size) {
   @media (max-width: $viewportMedium) {

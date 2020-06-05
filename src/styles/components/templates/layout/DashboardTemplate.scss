@@ -11,5 +11,14 @@
     @media (max-width: $viewportSmall) {
       padding: 10px 20px;
     }
+
+    .row-1 {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: $viewportSmall) {
+        display: block;
+      }
+    }
   }
 }

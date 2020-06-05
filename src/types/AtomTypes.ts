@@ -11,8 +11,6 @@ export interface IconProps {
 export interface TitleProps {
   /** is subtitle **/
   sub?: boolean;
-  /** heading number **/
-  h?: number;
   value: string;
   prefix?: JSX.Element;
 }

@@ -1,6 +1,6 @@
 @import "styles/variables.scss";
 
-$fontSize: 1.2rem;
+$fontSize: 1.4rem;
 $subFontSize: 1rem;
 
 .title-container {
@@ -8,6 +8,7 @@ $subFontSize: 1rem;
     position: relative;
     font-size: $fontSize;
     font-weight: 400;
+    color: $title-color-sub;
 
     @include responsiveFont($fontSize);
 
@@ -30,6 +31,7 @@ $subFontSize: 1rem;
     font-size: $subFontSize;
     font-weight: 400;
     margin-left: 15px;
+    color: $title-color-sub;
 
     @include responsiveFont($subFontSize);
   }

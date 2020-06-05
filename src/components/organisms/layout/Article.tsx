@@ -1,19 +1,22 @@
 import React from "react";
 import { Title } from "components/atoms/entry";
-import { Icon } from "components/atoms/display";
+import { Section } from "components/molecules/display";
+import { organismTypes } from "types";
 
 import "styles/components/organisms/layout/Article.scss";
 
-function Article() {
+function Article(props: organismTypes.ArticleProps) {
+  const { title, sections } = props;
+
+  const content = sections.map((item) => {
+    const { key, title, icon, section } = item;
+    return <Section key={key} title={title} icon={icon} content={section} />;
+  });
+
   return (
     <article className="article-container">
-      <Title sub={false} h={1} value="About Me" />
-      <Title
-        sub={true}
-        h={1}
-        value="Introduce"
-        prefix={<Icon src={require("assets/imgs/introduce.png")} />}
-      />
+      <Title value={title} />
+      {content}
     </article>
   );
 }
