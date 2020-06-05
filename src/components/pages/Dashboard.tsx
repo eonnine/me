@@ -1,7 +1,8 @@
 import React from "react";
+import { WithMainLayout } from "components/layouts";
 import { DashboardTemplate } from "components/templates/layout";
 
-function Dashboard() {
+function Dashboard(props: React.ComponentProps<any>) {
   const state = {
     sider: {
       src: require("assets/imgs/main.jpg"),
@@ -11,4 +12,4 @@ function Dashboard() {
   return <DashboardTemplate {...state} />;
 }
 
-export default Dashboard;
+export default WithMainLayout(Dashboard);

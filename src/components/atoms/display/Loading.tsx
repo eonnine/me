@@ -2,7 +2,7 @@ import React from "react";
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 
-import "styles/components/utils/common/Loading.scss";
+import "styles/components/commons/Loading.scss";
 
 function Loading() {
   return (

@@ -1,0 +1,18 @@
+@import "styles/variables.scss";
+
+$maxWidth: 0.9rem;
+$maxHeight: 0.9rem;
+
+.icon-container {
+  margin-right: 5px;
+
+  .icon {
+    height: 100%;
+    width: 100%;
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    margin-bottom: 3px;
+
+    @include responsiveImage($maxWidth, $maxHeight);
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar } from "components/atoms/general";
+import { Avatar } from "components/atoms/display";
 import { moleculeTypes } from "types";
 
 import { values } from "../configs";

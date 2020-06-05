@@ -1,11 +1,13 @@
 @import "styles/variables.scss";
 
+$fontSize: 1.4rem;
+
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
-  padding: 1.5em;
+  padding: 20px 20px 0;
 
   .profile-item {
     flex: 1;
@@ -14,14 +16,8 @@
   .profile-position {
     font-family: fantasy;
     font-style: italic;
-    font-size: 1.4rem;
+    font-size: $fontSize;
 
-    @media (max-width: $viewportMedium) {
-      font-size: 1.2rem;
-    }
-
-    @media (max-width: $viewportSmall) {
-      font-size: 1rem;
-    }
+    @include responsiveFont($fontSize);
   }
 }

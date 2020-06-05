@@ -9,35 +9,6 @@ const routes = [
         show: true,
       },
     },
-    children: [
-      {
-        path: "introduce",
-        component: "",
-        meta: {
-          navigation: {
-            show: true,
-          },
-        },
-      },
-      {
-        path: "resume",
-        component: "",
-        meta: {
-          navigation: {
-            show: true,
-          },
-        },
-      },
-      {
-        path: "contact",
-        component: "",
-        meta: {
-          navigation: {
-            show: true,
-          },
-        },
-      },
-    ],
   },
 ];
 

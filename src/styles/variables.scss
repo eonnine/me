@@ -1,2 +1,26 @@
 $viewportMedium: 1100px;
 $viewportSmall: 500px;
+
+$line-color-base: rgba(215, 215, 215, 0.7);
+
+@mixin responsiveFont($size) {
+  @media (max-width: $viewportMedium) {
+    font-size: $size * 0.88;
+  }
+
+  @media (max-width: $viewportSmall) {
+    font-size: $size * 0.76;
+  }
+}
+
+@mixin responsiveImage($maxWidth, $maxHeight) {
+  @media (max-width: $viewportMedium) {
+    max-width: $maxWidth * 0.8;
+    max-height: $maxHeight * 0.8;
+  }
+
+  @media (max-width: $viewportSmall) {
+    max-width: $maxWidth * 0.6;
+    max-height: $maxHeight * 0.6;
+  }
+}

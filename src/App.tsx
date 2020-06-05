@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { hot } from "react-hot-loader/root";
 import { BrowserRouter } from "react-router-dom";
-import { Routes } from "components/utils/routes";
-import { Loading } from "components/utils/common";
+import { Routes } from "components/routes";
+import { Loading } from "components/atoms/display";
 
 import "styles/App.scss";
 

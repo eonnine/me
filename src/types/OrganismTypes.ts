@@ -1,3 +1,3 @@
-export interface HorizontalProps {
+export interface HeaderProps {
   content: JSX.Element;
 }

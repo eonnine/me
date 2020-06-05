@@ -1,0 +1,36 @@
+@import "styles/variables.scss";
+
+$fontSize: 1.2rem;
+$subFontSize: 1rem;
+
+.title-container {
+  .article-title {
+    position: relative;
+    font-size: $fontSize;
+    font-weight: 400;
+
+    @include responsiveFont($fontSize);
+
+    span {
+      position: relative;
+      background-color: #fff;
+      padding: 0 10px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      border-top: 1px solid $line-color-base;
+    }
+  }
+
+  .article-title-sub {
+    font-size: $subFontSize;
+    font-weight: 400;
+    margin-left: 15px;
+
+    @include responsiveFont($subFontSize);
+  }
+}

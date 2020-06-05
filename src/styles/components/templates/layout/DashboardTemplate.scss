@@ -1,0 +1,15 @@
+@import "styles/variables.scss";
+
+.dashboard-template-container {
+  .article-list {
+    padding: 0 5%;
+
+    @media (max-width: $viewportMedium) {
+      padding: 15px 60px;
+    }
+
+    @media (max-width: $viewportSmall) {
+      padding: 10px 20px;
+    }
+  }
+}

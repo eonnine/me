@@ -3,9 +3,9 @@ import { organismTypes } from "types";
 
 import "styles/components/organisms/layout/Header.scss";
 
-function Horizontal(props: organismTypes.HorizontalProps) {
+function Header(props: organismTypes.HeaderProps) {
   const { content } = props;
-  return <div className="header-container">{content}</div>;
+  return <header className="header-container">{content}</header>;
 }
 
-export default Horizontal;
+export default Header;

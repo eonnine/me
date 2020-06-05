@@ -1,7 +1,7 @@
 import React from "react";
 import { atomTypes } from "types";
 
-import "styles/components/atoms/general/Avatar.scss";
+import "styles/components/atoms/display/Avatar.scss";
 
 function Avatar(props: atomTypes.AvatarProps) {
   return (
