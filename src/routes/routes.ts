@@ -1,25 +1,41 @@
+import { lazy } from "react";
+
 const routes = [
   {
-    path: "/home",
-    redirect: "",
-    component: "",
-    children: [],
-  },
-  {
-    path: "/dashboard",
-    component: "",
+    path: "/",
+    component: lazy(() => import("components/pages/Dashboard")),
+    meta: {
+      navigation: {
+        show: true,
+      },
+    },
     children: [
       {
         path: "introduce",
         component: "",
+        meta: {
+          navigation: {
+            show: true,
+          },
+        },
       },
       {
         path: "resume",
         component: "",
+        meta: {
+          navigation: {
+            show: true,
+          },
+        },
       },
       {
         path: "contact",
         component: "",
+        meta: {
+          navigation: {
+            show: true,
+          },
+        },
       },
     ],
   },

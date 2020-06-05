@@ -1,5 +1,16 @@
 @import "~antd/dist/antd.css";
 
 .App {
-  background-color: #fff;
+  .ant-layout {
+    background-color: #fff;
+  }
+
+  .ant-layout-header {
+    line-height: 2em;
+  }
+
+  .align-center {
+    display: flex;
+    justify-content: center;
+  }
 }

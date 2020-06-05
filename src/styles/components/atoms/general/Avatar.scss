@@ -1,0 +1,21 @@
+@import "styles/variables.scss";
+
+.avatar-container {
+  .thumb {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+  }
+
+  @media (max-width: $viewportMedium) {
+    max-height: 115px;
+    max-width: 115px;
+  }
+
+  @media (max-width: $viewportSmall) {
+    max-height: 80px;
+    max-width: 80px;
+  }
+}

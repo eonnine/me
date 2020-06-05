@@ -1,18 +1,19 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { hot } from "react-hot-loader/root";
-
-import Router from "components/utils/Router";
+import { BrowserRouter } from "react-router-dom";
+import { Routes } from "components/utils/routes";
+import { Loading } from "components/utils/common";
 
 import "styles/App.scss";
 
 const App = () => {
   return (
     <div className="App">
-      <img
-        src={require("assets/imgs/main.jpg")}
-        style={{ width: "100vw", height: "37vh" }}
-      />
-      <Router />
+      <BrowserRouter>
+        <Suspense fallback={<Loading />}>
+          <Routes />
+        </Suspense>
+      </BrowserRouter>
     </div>
   );
 };

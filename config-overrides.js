@@ -2,8 +2,9 @@ const {
   override,
   disableChunk,
   addBabelPlugins,
-  fixBabelImports
-} = require('customize-cra')
+  fixBabelImports,
+  addWebpackAlias,  addLessLoader
+} = require('customize-cra');
 
 module.export = override(
   disableChunk(),
@@ -15,4 +16,7 @@ module.export = override(
   ...addBabelPlugins(
     "react-hot-loader/babel"
   ),
+  addWebpackAlias({
+    'react-dom': '@hot-loader/react-dom'
+  }),
 )
