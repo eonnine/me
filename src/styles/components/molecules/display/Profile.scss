@@ -6,7 +6,7 @@ $fontSize: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+  width: 400px;
   padding: 20px 20px 0;
 
   .profile-item {
@@ -14,7 +14,6 @@ $fontSize: 1.4rem;
   }
 
   .profile-position {
-    font-family: fantasy;
     font-style: italic;
     font-size: $fontSize;
     @include responsiveFont($fontSize);

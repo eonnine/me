@@ -98,7 +98,16 @@ export const introduceValues = {
           key: "etc",
           title: "Dev Tool",
           items: [
-            { key: "git", label: "Git", img: require("assets/imgs/git.png") },
+            {
+              key: "git",
+              label: "Git",
+              img: require("assets/imgs/git.png"),
+            },
+            {
+              key: "svn",
+              label: "Svn",
+              img: require("assets/imgs/svn.png"),
+            },
             {
               key: "docker",
               label: "Docker",
@@ -110,7 +119,6 @@ export const introduceValues = {
               img: require("assets/imgs/kubernetes.png"),
             },
             { key: "gcp", label: "GCP", img: require("assets/imgs/gcp.png") },
-            { key: "svn", label: "Svn", img: require("assets/imgs/svn.png") },
           ],
         },
       ],
