@@ -14,7 +14,9 @@ $fontSize: 1.4rem;
   }
 
   .profile-position {
+    font-family: fantasy;
     font-style: italic;
+    font-weight: 200;
     font-size: $fontSize;
     @include responsiveFont($fontSize);
   }

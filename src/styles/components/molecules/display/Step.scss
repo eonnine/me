@@ -1,2 +1,55 @@
+@import "styles/variables.scss";
+
+$iconWidth: 40px;
+
 .step-container {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  padding-top: 20px;
+
+  .step-icon {
+    position: relative;
+    width: $iconWidth;
+    height: $iconWidth;
+    border: 1px solid $step-color;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .step-tail {
+    position: absolute;
+    height: 100%;
+    left: $iconWidth/2 - 2px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: -22px;
+      border-left: 1px solid $step-color;
+    }
+  }
+
+  .step-content {
+    border: 1px solid $line-color-base;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 15px;
+
+    h3 {
+      margin: 0;
+    }
+    pre {
+      padding-top: 10px;
+      font-size: 0.85rem;
+      color: #000;
+      white-space: pre-wrap;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
 }

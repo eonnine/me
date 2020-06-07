@@ -10,7 +10,9 @@ function Section(props: moleculeTypes.SectionProps) {
 
   return (
     <section className="section-container">
-      <Title sub={sub} h={h} value={title} prefix={<Icon src={icon} />} />
+      {title ? (
+        <Title sub={sub} h={h} value={title} prefix={<Icon src={icon} />} />
+      ) : null}
       <div className="content">{content}</div>
     </section>
   );

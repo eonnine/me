@@ -1,6 +1,5 @@
 import React from "react";
 import { atomTypes } from "types";
-import styled from "styled-components";
 
 import "styles/components/atoms/display/Card.scss";
 

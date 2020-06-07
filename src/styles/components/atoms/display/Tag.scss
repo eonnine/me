@@ -1,0 +1,47 @@
+.tag-container {
+  display: inline-block;
+  padding: 0 7px;
+  background: rgb(215, 215, 215);
+  border-color: rgb(180, 180, 180);
+  color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  cursor: pointer;
+
+  &.gold {
+    background: #fffbe6;
+    border-color: #ffe58f;
+  }
+  &.red {
+    background: #fff1f0;
+    border-color: #ffa39e;
+  }
+  &.orange {
+    background: #fff7e6;
+    border-color: #ffd591;
+  }
+  &.volcano {
+    background: #fff2e8;
+    border-color: #ffbb96;
+  }
+  &.green {
+    background: #f6ffed;
+    border-color: #b7eb8f;
+  }
+  &.blue {
+    background: #f0f5ff;
+    border-color: #adc6ff;
+  }
+  &.cyan {
+    background: #e6fffb;
+    border-color: #87e8de;
+  }
+  &.purple {
+    background: #f9f0ff;
+    border-color: #d3adf7;
+  }
+}

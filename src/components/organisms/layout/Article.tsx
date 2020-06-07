@@ -7,6 +7,7 @@ import "styles/components/organisms/layout/Article.scss";
 
 function Article(props: organismTypes.ArticleProps) {
   const { title, sections } = props;
+
   const content = sections.map((item) => {
     const { key, title, icon, section } = item;
     return (

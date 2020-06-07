@@ -4,8 +4,8 @@ export interface HeaderProps {
 
 export interface ArticleContent {
   key: string;
-  title: string;
-  icon: string;
+  title?: string;
+  icon?: string;
   section?: JSX.Element;
   [key: string]: any;
 }

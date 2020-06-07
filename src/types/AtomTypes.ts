@@ -21,3 +21,9 @@ export interface CardProps {
   label: JSX.Element | string;
   body: JSX.Element;
 }
+
+export interface TagProps {
+  label: string;
+  color?: string;
+  onClick?: Function;
+}
