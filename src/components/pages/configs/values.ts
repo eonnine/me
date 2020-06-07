@@ -1,7 +1,7 @@
 export const ProfileValues = {
   name: "정언구",
   position: "Junior FullStack Developer",
-  img: require("assets/imgs/main.jpg"),
+  img: require("assets/imgs/profile.jpg"),
   navigations: [
     {
       key: "phone",
@@ -25,7 +25,7 @@ export const historyValues = {
       key: "1",
       project: {
         label: "2020",
-        title: "PAO 공장 에너지 관리 시스템",
+        title: "PAO 공장 에너지 관리 시스템 프론트엔드",
         tags: [
           { label: "Product", color: "gold" },
           { label: "1인", color: "red" },
@@ -71,7 +71,7 @@ export const historyValues = {
       key: "3",
       project: {
         label: "2019",
-        title: "한화 에너지 관리 시스템",
+        title: "한화 에너지 관리 시스템 프론트엔드",
         tags: [
           { label: "Product", color: "gold" },
           { label: "react", color: "cyan" },
