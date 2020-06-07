@@ -1,9 +1,10 @@
 import React from "react";
 import { Tag } from "components/atoms/display";
 import { moleculeTypes } from "types";
+import { util } from "configs";
+import { atomTypes } from "types";
 
 import "styles/components/molecules/display/Step.scss";
-import { atomTypes } from "types";
 
 function Step(props: moleculeTypes.StepProps) {
   const { label, title, tags, link, content } = props;
@@ -13,9 +14,8 @@ function Step(props: moleculeTypes.StepProps) {
   });
 
   const openNewWindow = (url: string) => {
-    const newWindow = window.open(url, "_blank");
-    if (newWindow) {
-      newWindow.focus();
+    if (url) {
+      util.openNewTab(url);
     }
   };
 

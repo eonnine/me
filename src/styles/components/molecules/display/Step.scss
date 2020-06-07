@@ -1,6 +1,6 @@
 @import "styles/variables.scss";
 
-$iconWidth: 40px;
+$symbolWidth: 40px;
 
 .step-container {
   position: relative;
@@ -8,22 +8,33 @@ $iconWidth: 40px;
   justify-content: start;
   height: 100%;
   padding-top: 20px;
+  @media (max-width: $viewportSmall) {
+    display: block;
+  }
 
-  .step-icon {
+  & .step-icon {
     position: relative;
-    width: $iconWidth;
-    height: $iconWidth;
+    width: $symbolWidth;
+    height: $symbolWidth;
     border: 1px solid $step-color;
     border-radius: 50%;
     background-color: #fff;
     padding: 10px 0;
+    margin-right: 15px;
     text-align: center;
+    @media (max-width: $viewportSmall) {
+      left: calc(45% - 20px);
+      bottom: 10px;
+    }
   }
 
-  .step-tail {
+  & .step-tail {
     position: absolute;
     height: 100%;
-    left: $iconWidth/2 - 2px;
+    left: $symbolWidth/2 - 2px;
+    @media (max-width: $viewportSmall) {
+      left: 45%;
+    }
 
     &::after {
       content: "";
@@ -34,22 +45,16 @@ $iconWidth: 40px;
     }
   }
 
-  .step-content {
+  & .step-content {
+    position: relative;
     border: 1px solid $line-color-base;
     padding: 10px;
     width: 100%;
     border-radius: 10px;
-    margin-left: 15px;
+    background: #fff;
 
-    h3 {
+    & h3 {
       margin: 0;
-    }
-    pre {
-      padding-top: 10px;
-      font-size: 0.85rem;
-      color: #000;
-      white-space: pre-wrap;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
   }
 }

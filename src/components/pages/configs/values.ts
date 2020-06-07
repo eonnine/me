@@ -1,3 +1,23 @@
+export const ProfileValues = {
+  name: "정언구",
+  position: "Junior FullStack Developer",
+  img: require("assets/imgs/main.jpg"),
+  navigations: [
+    {
+      key: "phone",
+      icon: require("assets/imgs/phone.png"),
+      alt: "Phone number",
+      value: "010-8280-2966",
+    },
+    {
+      key: "mail",
+      icon: require("assets/imgs/email.png"),
+      alt: "Email",
+      value: "jeg910716@gmail.com",
+    },
+  ],
+};
+
 export const historyValues = {
   title: "History",
   data: [
@@ -5,7 +25,7 @@ export const historyValues = {
       key: "1",
       project: {
         label: "2020",
-        title: "PAO 발전소 모니터링 시스템",
+        title: "PAO 공장 에너지 관리 시스템",
         tags: [
           { label: "Product", color: "gold" },
           { label: "1인", color: "red" },
@@ -19,7 +39,7 @@ export const historyValues = {
           { label: "slack", color: "purple" },
           { label: "jira", color: "purple" },
         ],
-        content: `실시간 발전소 데이터의 시각화를 포함한 프론트엔드 업무를 수행`,
+        content: `- 실시간 발전소 데이터의 시각화를 포함한 프론트엔드 업무를 수행`,
       },
     },
     {
@@ -44,14 +64,14 @@ export const historyValues = {
           { label: "slack", color: "purple" },
           { label: "notion", color: "purple" },
         ],
-        content: `Firebase 인증 Nest 모듈 및 사용자 관리 기능을 포함한 백엔드 업무 수행\n인증, 대시보드, 사용자 관리를 포함한 프론트엔드 업무 수행`,
+        content: `- Firebase 인증 Nest 모듈 및 사용자 관리 기능을 포함한 백엔드 업무 수행\n- 인증, 대시보드, 사용자 관리를 포함한 프론트엔드 업무 수행`,
       },
     },
     {
       key: "3",
       project: {
         label: "2019",
-        title: "한화 발전소 관리 시스템",
+        title: "한화 에너지 관리 시스템",
         tags: [
           { label: "Product", color: "gold" },
           { label: "react", color: "cyan" },
@@ -65,7 +85,7 @@ export const historyValues = {
           { label: "slack", color: "purple" },
           { label: "notion", color: "purple" },
         ],
-        content: `다국어 처리, 공통 컴포넌트, 차트를 포함한 프론트엔드 업무 수행`,
+        content: `- 다국어 처리, 공통 컴포넌트, 차트를 포함한 프론트엔드 업무 수행`,
       },
     },
     {
@@ -80,7 +100,7 @@ export const historyValues = {
           { label: "browserify", color: "green" },
           { label: "git", color: "blue" },
         ],
-        content: `RequireJS같은 AMD를 구현해보고자 개발`,
+        content: `- RequireJS같은 AMD를 구현해보고자 개발`,
       },
     },
     {
@@ -98,7 +118,7 @@ export const historyValues = {
           { label: "report designer", color: "cyan" },
           { label: "svn", color: "blue" },
         ],
-        content: `메인 실험 프로세스, BOM 연계를 포함한 백엔드 업무 수행\n메인 실험 프로세스, 파일 업로드 JS 모듈, Modal JS 모듈을 포함한 프론트엔드 업무 수행\n`,
+        content: `- 메인 실험 프로세스, BOM 연계를 포함한 백엔드 업무 수행\n- 메인 실험 프로세스, 파일 업로드 JS 모듈, Modal JS 모듈을 포함한 프론트엔드 업무 수행\n`,
       },
     },
   ],
@@ -111,6 +131,13 @@ export const introduceValues = {
       key: "introduce",
       title: "Introduce",
       icon: require("assets/imgs/introduce.png"),
+      content: `경력 약 3년의 주니어 개발자입니다.
+새로운 기술을 습득하는데 전혀 거부감이 없으며 습득력이 빠르다는 말을 많이 듣습니다.
+제 개발 방식에 대해 항상 의문점을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
+
+최근 관심 기술은 React Native, Blazor이며 요새 들어 프론트엔드에 끌리는 편이지만 
+인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
+`,
     },
     {
       key: "skill",
@@ -198,7 +225,7 @@ export const introduceValues = {
         },
         {
           key: "etc",
-          title: "Dev Tool",
+          title: "Dev-Tool",
           items: [
             {
               key: "git",
@@ -225,10 +252,36 @@ export const introduceValues = {
         },
       ],
     },
+  ],
+};
+
+export const styleValues = {
+  title: "Style",
+  data: [
     {
-      key: "contact",
-      title: "Contact",
-      icon: require("assets/imgs/contact.png"),
+      key: "1",
+      label: "뛰어난 집중력",
+      color: "normal",
+    },
+    {
+      key: "2",
+      label: "빠른 습득력",
+      color: "hard",
+    },
+    {
+      key: "3",
+      label: "강한 책임감",
+      color: "normal",
+    },
+    {
+      key: "4",
+      label: "긍정적인 태도",
+      color: "hard",
+    },
+    {
+      key: "5",
+      label: "원활한 소통",
+      color: "normal",
     },
   ],
 };

@@ -4,12 +4,12 @@ $maxWidth: 150px;
 $maxHeight: 150px;
 
 .avatar-container {
-  .thumb {
+  & .thumb {
     border-radius: 50%;
     height: 100%;
     width: 100%;
     max-width: $maxWidth;
     max-height: $maxHeight;
-    @include responsiveImage($maxWidth, $maxHeight);
+    @include responsiveSize($maxWidth, $maxHeight);
   }
 }

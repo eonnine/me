@@ -6,12 +6,12 @@ $subFontSize: 1rem;
 .title-container {
   margin-top: 25px;
 
-  .article-title {
+  & .article-title {
     position: relative;
     font-weight: 500;
     color: $title-color-sub;
 
-    span {
+    & span {
       position: relative;
       background-color: #fff;
       padding: 0 10px;
@@ -26,7 +26,7 @@ $subFontSize: 1rem;
     }
   }
 
-  .article-title-sub {
+  & .article-title-sub {
     font-weight: 400;
     margin-left: 15px;
     color: $title-color-sub;

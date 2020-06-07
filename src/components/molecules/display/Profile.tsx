@@ -1,18 +1,32 @@
 import React from "react";
 import { Avatar } from "components/atoms/display";
+import { Icon } from "components/atoms/general";
 import { moleculeTypes } from "types";
-
-import { values } from "../configs";
 
 import "styles/components/molecules/display/Profile.scss";
 
 function Profile(props: moleculeTypes.ProfileProps) {
-  const { ProfileValues } = values;
+  const { profile } = props;
+  const { name, position, img, navigations } = profile;
+
+  const navigationElements = navigations.map(
+    (navi: moleculeTypes.Navigation) => {
+      const { key, icon, alt, value } = navi;
+      return (
+        <span key={key}>
+          <Icon src={icon} />
+          {value}
+        </span>
+      );
+    }
+  );
 
   return (
     <div className="profile-container">
-      <Avatar {...props} />
-      <h2 className="profile-position">{ProfileValues.position}</h2>
+      <Avatar src={img} />
+      <h2 className="profile-name">{name}</h2>
+      <h2 className="profile-position">{position}</h2>
+      <div className="header-navigation">{navigationElements}</div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-$viewportLarge: 1500px;
-$viewportMedium: 1100px;
-$viewportSmall: 600px;
+$viewportLarge: 1300px;
+$viewportMedium: 1000px;
+$viewportSmall: 700px;
 $viewportExtraSmall: 350px;
 $global-font-size: 14px;
 
@@ -18,7 +18,7 @@ $step-color: #216292;
   }
 }
 
-@mixin responsiveImage($maxWidth, $maxHeight) {
+@mixin responsiveSize($maxWidth, $maxHeight) {
   @media (max-width: $viewportMedium) {
     max-width: $maxWidth * 0.8;
     max-height: $maxHeight * 0.8;

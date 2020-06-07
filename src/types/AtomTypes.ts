@@ -6,6 +6,9 @@ export interface AvatarProps {
 
 export interface IconProps {
   src: string;
+  alt?: string;
+  size?: string;
+  onClick?: Function;
 }
 
 export interface TitleProps {

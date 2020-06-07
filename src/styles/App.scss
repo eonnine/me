@@ -16,6 +16,14 @@
     justify-content: center;
   }
 
+  pre {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #000;
+    white-space: pre-wrap;
+    font-family: "Segoe UI";
+  }
+
   font-size: $global-font-size;
   font-family: "NotoSansKR", "Gill Sans MT", "Trebuchet MS";
   @include responsiveFont($global-font-size);

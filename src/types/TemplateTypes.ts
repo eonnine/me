@@ -1,4 +1,4 @@
-import { AvatarProps } from "./AtomTypes";
+import { ProfileProps } from "./MoleculeTypes";
 import { organismTypes } from "types";
 
 interface DashboardContent {
@@ -6,7 +6,7 @@ interface DashboardContent {
   data: Array<organismTypes.ArticleContent>;
 }
 export interface DashboardProps {
-  sider: AvatarProps;
+  header: ProfileProps;
   history: DashboardContent;
   introduce: DashboardContent;
   style: DashboardContent;
@@ -18,8 +18,14 @@ export interface Skill {
   img: string;
 }
 
-export interface SectionValues {
+export interface SkillValues {
   key: string;
   title: string;
   items: Array<Skill>;
+}
+
+export interface ContactValues {
+  key: string;
+  icon: string;
+  content: string;
 }

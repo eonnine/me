@@ -1,13 +1,14 @@
 import React from "react";
-import { Card, Tag } from "components/atoms/display";
-import { Profile, Section, Step } from "components/molecules/display";
+import { Card } from "components/atoms/display";
+import { Icon } from "components/atoms/general";
+import { Section, Step } from "components/molecules/display";
 import { Header, Article } from "components/organisms/layout";
 import { moleculeTypes, templateTypes } from "types";
 
 import "styles/components/templates/layout/DashboardTemplate.scss";
 
 function Dashboard(props: templateTypes.DashboardProps) {
-  const { sider, history, introduce, style } = props;
+  const { header, history, introduce, style } = props;
 
   const historySections = history.data.map((item) => {
     const {
@@ -34,10 +35,19 @@ function Dashboard(props: templateTypes.DashboardProps) {
   });
 
   const introduceSections = introduce.data.map((item) => {
-    if (item.key === "skill") {
+    if (item.key === "introduce") {
       return {
         ...item,
-        section: item.list.map((subItem: templateTypes.SectionValues) => {
+        section: (
+          <div className="dashboard-introduce">
+            <Section content={<pre>{item.content}</pre>} />
+          </div>
+        ),
+      };
+    } else if (item.key === "skill") {
+      return {
+        ...item,
+        section: item.list.map((subItem: templateTypes.SkillValues) => {
           return (
             <div key={subItem.key}>
               <Section
@@ -60,14 +70,43 @@ function Dashboard(props: templateTypes.DashboardProps) {
           );
         }),
       };
+    } else if (item.key === "contact") {
+      return {
+        ...item,
+        section: (
+          <div className="dashboard-contact">
+            {item.items.map((subItem: templateTypes.ContactValues) => (
+              <div>
+                <Icon src={subItem.icon} />
+                {subItem.content}
+              </div>
+            ))}
+          </div>
+        ),
+      };
     }
     return item;
   });
 
+  const styleSections = [
+    {
+      key: "style",
+      section: (
+        <div className="dashboard-style">
+          {style.data.map((item) => (
+            <div key={item.key} className={item.color}>
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </div>
+      ),
+    },
+  ];
+
   return (
     <div className="dashboard-template-container">
       <div>
-        <Header content={<Profile src={sider.src} />} />
+        <Header data={header} />
       </div>
       <div className="article-list">
         <div className="divide-row">
@@ -75,7 +114,7 @@ function Dashboard(props: templateTypes.DashboardProps) {
           <Article title={introduce.title} sections={introduceSections} />
         </div>
         <div>
-          <Article title={style.title} sections={style.data} />
+          <Article title={style.title} sections={styleSections} />
         </div>
       </div>
     </div>

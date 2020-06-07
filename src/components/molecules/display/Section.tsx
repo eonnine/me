@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "components/atoms/display";
-import { Icon } from "components/atoms/display";
+import { Icon } from "components/atoms/general";
 import { moleculeTypes } from "types";
 
 import "styles/components/molecules/display/Section.scss";

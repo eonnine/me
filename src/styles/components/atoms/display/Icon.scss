@@ -7,12 +7,21 @@ $maxHeight: 1.2rem;
   display: inline;
   margin-right: 7px;
 
-  .icon {
+  & .icon {
     height: 100%;
     width: 100%;
     max-width: $maxWidth;
     max-height: $maxHeight;
     margin-bottom: 3px;
-    @include responsiveImage($maxWidth, $maxHeight);
+    @include responsiveSize($maxWidth, $maxHeight);
+
+    &.normal {
+      min-width: 0px;
+      min-height: 0px;
+    }
+    &.large {
+      min-width: 24px;
+      min-height: 24px;
+    }
   }
 }

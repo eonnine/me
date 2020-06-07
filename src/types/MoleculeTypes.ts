@@ -1,12 +1,25 @@
-import { AvatarProps, TagProps } from "./AtomTypes";
+import { TagProps } from "./AtomTypes";
 
-export interface ProfileProps extends AvatarProps {
-  [key: string]: any;
+export interface Navigation {
+  key: string;
+  icon: string;
+  alt?: string;
+  value: string;
+}
+export interface Profile {
+  name: string;
+  position: string;
+  img: string;
+  navigations: Array<Navigation>;
+}
+
+export interface ProfileProps {
+  profile: Profile;
 }
 
 export interface SectionProps {
   sub?: boolean;
-  title: string | undefined;
+  title?: string | undefined;
   icon?: string;
   content: JSX.Element | string | undefined;
   h?: number;

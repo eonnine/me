@@ -5,15 +5,12 @@ import { values } from "./configs";
 
 function Dashboard(props: React.ComponentProps<any>) {
   const data = {
-    sider: {
-      src: require("assets/imgs/main.jpg"),
+    header: {
+      profile: values.ProfileValues,
     },
     history: values.historyValues,
     introduce: values.introduceValues,
-    style: {
-      title: "Style",
-      data: [],
-    },
+    style: values.styleValues,
   };
 
   return <DashboardTemplate {...data} />;

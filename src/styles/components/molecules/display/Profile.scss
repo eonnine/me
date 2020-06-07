@@ -9,15 +9,29 @@ $fontSize: 1.4rem;
   width: 400px;
   padding: 20px 20px 0;
 
-  .profile-item {
+  & .profile-item {
     flex: 1;
   }
 
-  .profile-position {
+  & .profile-name {
+    letter-spacing: 0.7rem;
+  }
+
+  & .profile-position {
     font-family: fantasy;
     font-style: italic;
     font-weight: 200;
     font-size: $fontSize;
     @include responsiveFont($fontSize);
+  }
+
+  & .header-navigation {
+    & span {
+      margin: 0 10px;
+      font-weight: 600;
+    }
+    & .header-link {
+      cursor: pointer;
+    }
   }
 }

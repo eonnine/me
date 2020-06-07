@@ -1,5 +1,7 @@
+import { ProfileProps } from "./MoleculeTypes";
+
 export interface HeaderProps {
-  content: JSX.Element;
+  data: ProfileProps;
 }
 
 export interface ArticleContent {
