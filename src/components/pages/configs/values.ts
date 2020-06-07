@@ -93,7 +93,7 @@ export const historyValues = {
       project: {
         label: "2019",
         title: "AMD Modular",
-        link: "https://github.com/eonnine/Modular.git",
+        link: "https://github.com/eonnine/Modular",
         tags: [
           { label: "Personal", color: "gold" },
           { label: "javascript", color: "cyan" },

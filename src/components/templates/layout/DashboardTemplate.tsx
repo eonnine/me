@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "components/atoms/display";
 import { Icon } from "components/atoms/general";
 import { Section, Step } from "components/molecules/display";
-import { Header, Article } from "components/organisms/layout";
+import { Header, Article, Footer } from "components/organisms/layout";
 import { moleculeTypes, templateTypes } from "types";
 
 import "styles/components/templates/layout/DashboardTemplate.scss";
@@ -116,6 +116,9 @@ function Dashboard(props: templateTypes.DashboardProps) {
         <div>
           <Article title={style.title} sections={styleSections} />
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
