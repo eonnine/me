@@ -14,7 +14,7 @@ function Profile(props: moleculeTypes.ProfileProps) {
       const { key, icon, alt, value } = navi;
       return (
         <span key={key}>
-          <Icon src={icon} />
+          <Icon src={icon} alt={alt} />
           {value}
         </span>
       );
