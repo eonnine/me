@@ -1,6 +1,5 @@
 @import "~antd/dist/antd.css";
 @import "./variables.scss";
-@import "./fonts.scss";
 
 .App {
   .ant-layout {
@@ -25,6 +24,6 @@
   }
 
   font-size: $global-font-size;
-  font-family: "NotoSansKR", "Gill Sans MT", "Trebuchet MS";
+  font-family: sans-serif;
   @include responsiveFont($global-font-size);
 }

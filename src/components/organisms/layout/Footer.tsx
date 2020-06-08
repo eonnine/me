@@ -12,11 +12,11 @@ function Footer() {
   return (
     <div className="footer-container">
       <span className="message">
-        이 포트폴리오의 소스는{" "}
+        포트폴리오의 코드는{" "}
         <NavLink to="" onClick={onClickHandler}>
-          이 곳
+          여기
         </NavLink>
-        에서 확인할 수 있습니다
+        서 확인할 수 있습니다
       </span>
     </div>
   );
