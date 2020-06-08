@@ -6,6 +6,7 @@ $maxHeight: 150px;
 .avatar-container {
   & .thumb {
     border-radius: 50%;
+    min-height: 75px;
     height: 100%;
     width: 100%;
     max-width: $maxWidth;

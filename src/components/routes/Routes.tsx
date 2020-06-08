@@ -11,6 +11,7 @@ function Routes() {
         .filter((route) => route.meta.navigation.show)
         .map((route: routeTypes.Route) => (
           <Route
+            key={route.path}
             path={route.path}
             render={() => <route.component route={route} />}
           />
