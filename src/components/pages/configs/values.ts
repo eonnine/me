@@ -5,13 +5,13 @@ export const ProfileValues = {
   navigations: [
     {
       key: "phone",
-      icon: require("assets/imgs/phone.png"),
+      icon: require("assets/imgs/phone.svg"),
       alt: "Phone number",
       value: "010-8280-2966",
     },
     {
       key: "mail",
-      icon: require("assets/imgs/email.png"),
+      icon: require("assets/imgs/email.svg"),
       alt: "Email",
       value: "jeg910716@gmail.com",
     },
@@ -130,19 +130,18 @@ export const introduceValues = {
     {
       key: "introduce",
       title: "Introduce",
-      icon: require("assets/imgs/introduce.png"),
+      icon: require("assets/imgs/introduce.svg"),
       content: `경력 약 3년의 주니어 개발자입니다.
 새로운 기술을 습득하는데 전혀 거부감이 없으며 습득력이 빠르다는 말을 많이 듣습니다.
 제 개발 방식에 대해 항상 의문점을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
 
-최근 관심 기술은 React Native, Blazor이며 요새 들어 프론트엔드에 끌리는 편이지만 
-인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
+최근 관심 기술은 React Native, Blazor이며 요새 들어 프론트엔드에 끌리는 편이지만 인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
 `,
     },
     {
       key: "skill",
       title: "Skill",
-      icon: require("assets/imgs/skill.png"),
+      icon: require("assets/imgs/skill.svg"),
       list: [
         {
           key: "frontend",
@@ -151,34 +150,34 @@ export const introduceValues = {
             {
               key: "html",
               label: "HTML",
-              img: require("assets/imgs/html5.png"),
+              img: require("assets/imgs/html5.svg"),
             },
-            { key: "css", label: "CSS", img: require("assets/imgs/css3.png") },
+            { key: "css", label: "CSS", img: require("assets/imgs/css3.svg") },
             {
               key: "js",
               label: "Javascript",
-              img: require("assets/imgs/js.png"),
+              img: require("assets/imgs/js.svg"),
             },
             {
               key: "react",
               label: "React",
-              img: require("assets/imgs/react.png"),
+              img: require("assets/imgs/react.svg"),
             },
-            { key: "vue", label: "Vue", img: require("assets/imgs/vue.png") },
+            { key: "vue", label: "Vue", img: require("assets/imgs/vue.svg") },
             {
               key: "apollo",
               label: "Apollo",
-              img: require("assets/imgs/apollo.png"),
+              img: require("assets/imgs/apollo.svg"),
             },
             {
               key: "jq",
               label: "jQuery",
-              img: require("assets/imgs/jQuery.png"),
+              img: require("assets/imgs/jQuery.svg"),
             },
             {
               key: "webpack",
               label: "Webpack",
-              img: require("assets/imgs/webpack.png"),
+              img: require("assets/imgs/webpack.svg"),
             },
           ],
         },
@@ -189,37 +188,37 @@ export const introduceValues = {
             {
               key: "java",
               label: "Java",
-              img: require("assets/imgs/java.png"),
+              img: require("assets/imgs/java.svg"),
             },
             {
               key: "spring",
               label: "Spring",
-              img: require("assets/imgs/spring.png"),
+              img: require("assets/imgs/spring.svg"),
             },
             {
               key: "node",
               label: "Node",
-              img: require("assets/imgs/node.png"),
+              img: require("assets/imgs/node.svg"),
             },
             {
               key: "ts",
               label: "Typescript",
-              img: require("assets/imgs/typescript.png"),
+              img: require("assets/imgs/typescript.svg"),
             },
             {
               key: "gq",
               label: "GraphQL",
-              img: require("assets/imgs/graphql.png"),
+              img: require("assets/imgs/graphql.svg"),
             },
             {
               key: "oracle",
               label: "Oracle",
-              img: require("assets/imgs/oracle.png"),
+              img: require("assets/imgs/oracle.svg"),
             },
             {
               key: "mysql",
               label: "Mysql",
-              img: require("assets/imgs/mysql.png"),
+              img: require("assets/imgs/mysql.svg"),
             },
           ],
         },
@@ -230,24 +229,24 @@ export const introduceValues = {
             {
               key: "git",
               label: "Git",
-              img: require("assets/imgs/git.png"),
+              img: require("assets/imgs/git.svg"),
             },
             {
               key: "svn",
               label: "Svn",
-              img: require("assets/imgs/svn.png"),
+              img: require("assets/imgs/svn.svg"),
             },
             {
               key: "docker",
               label: "Docker",
-              img: require("assets/imgs/docker.png"),
+              img: require("assets/imgs/docker.svg"),
             },
             {
               key: "kube",
               label: "Kubernetes",
-              img: require("assets/imgs/kubernetes.png"),
+              img: require("assets/imgs/kubernetes.svg"),
             },
-            { key: "gcp", label: "GCP", img: require("assets/imgs/gcp.png") },
+            { key: "gcp", label: "GCP", img: require("assets/imgs/gcp.svg") },
           ],
         },
       ],
