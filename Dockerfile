@@ -17,6 +17,6 @@ COPY --from=builder /usr/src/app/config/nginx/nginx.conf /etc/nginx/conf.d/nginx
 # 위에서 실행한 빌드의 결과물을 nginx의 폴더로 이동
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
-# 3000포트 오픈하고 nginx 실행
+# 80포트 오픈하고 nginx 실행
 EXPOSE 3000
 CMD ["nginx", "-g", "daemon off;"]

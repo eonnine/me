@@ -12,9 +12,9 @@ export interface IconProps {
 }
 
 export interface TitleProps {
-  /** is subtitle **/
+  // is subtitle
   sub?: boolean;
-  /** heading size **/
+  // heading size
   h?: number;
   value: string;
   prefix?: JSX.Element | string;

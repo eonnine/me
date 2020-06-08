@@ -2,6 +2,9 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "allowJs": true,
     "checkJs": true,
     "noImplicitAny": true,
@@ -26,7 +29,8 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "charset": "utf8",
-    "locale": "ko"
+    "locale": "ko",
+    "baseUrl": "./src"
   },
   "include": [
     "src"
@@ -35,6 +39,5 @@
     "/node_modules",
     "/**/*.spec.*",
     "/**/*.test.*"
-  ],
-  "extends": "./tsconfig.paths.json"
+  ]
 }

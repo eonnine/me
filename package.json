@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "set PORT=3000 && react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
+    "prettier": "prettier --config prettierrc.js --write src/**/*.{ts,tsx,css,scss}",
     "lint": "eslint . --ext .js,.ts,.tsx"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.3.0",
+    "customize-cra": "^1.0.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,7 +33,6 @@
     "@types/react-helmet": "^6.0.0",
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.0",
-    "customize-cra": "^1.0.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react-hooks": "^4.0.4",
@@ -62,6 +63,5 @@
       "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
       "git add"
     ]
-  },
-  "homepage": "."
+  }
 }

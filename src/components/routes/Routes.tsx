@@ -1,19 +1,22 @@
-import React from "react";
-import { Switch } from "react-router-dom";
+import React, { Suspense } from "react";
+import { Route } from "react-router-dom";
 import { routes } from "routes";
-import { IRoute } from "types/RouteTypes";
-import RouteWithSubRoutes from "./RouteWithSubRoutes";
+import { Loading } from "components/atoms/display";
+import { routeTypes } from "types";
 
-function Router() {
+function Routes() {
   return (
-    <Switch>
+    <Suspense fallback={<Loading />}>
       {routes
         .filter((route) => route.meta.navigation.show)
-        .map((route: IRoute, i: number) => (
-          <RouteWithSubRoutes key={i} {...route} />
+        .map((route: routeTypes.Route) => (
+          <Route
+            path={route.path}
+            render={() => <route.component route={route} />}
+          />
         ))}
-    </Switch>
+    </Suspense>
   );
 }
 
-export default Router;
+export default Routes;

@@ -9,9 +9,15 @@ function Article(props: organismTypes.ArticleProps) {
   const { title, sections } = props;
 
   const content = sections.map((item) => {
-    const { key, title, icon, section } = item;
+    const { key, title: sesctionTitle, icon, section } = item;
     return (
-      <Section key={key} title={title} icon={icon} content={section} h={3} />
+      <Section
+        key={key}
+        title={sesctionTitle}
+        icon={icon}
+        content={section}
+        h={3}
+      />
     );
   });
 

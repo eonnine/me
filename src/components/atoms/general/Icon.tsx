@@ -1,7 +1,7 @@
 import React from "react";
 import { atomTypes } from "types";
 
-import "styles/components/atoms/display/Icon.scss";
+import "styles/components/atoms/general/Icon.scss";
 
 function Icon(props: atomTypes.IconProps) {
   const { src, alt = "", size = "small", onClick } = props;

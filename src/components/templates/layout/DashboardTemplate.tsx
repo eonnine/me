@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "components/atoms/display";
-import { Icon } from "components/atoms/general";
 import { Section, Step } from "components/molecules/display";
 import { Header, Article, Footer } from "components/organisms/layout";
 import { moleculeTypes, templateTypes } from "types";
@@ -44,7 +43,8 @@ function Dashboard(props: templateTypes.DashboardProps) {
           </div>
         ),
       };
-    } else if (item.key === "skill") {
+    }
+    if (item.key === "skill") {
       return {
         ...item,
         section: item.list.map((subItem: templateTypes.SkillValues) => {
@@ -69,20 +69,6 @@ function Dashboard(props: templateTypes.DashboardProps) {
             </div>
           );
         }),
-      };
-    } else if (item.key === "contact") {
-      return {
-        ...item,
-        section: (
-          <div className="dashboard-contact">
-            {item.items.map((subItem: templateTypes.ContactValues) => (
-              <div>
-                <Icon src={subItem.icon} />
-                {subItem.content}
-              </div>
-            ))}
-          </div>
-        ),
       };
     }
     return item;

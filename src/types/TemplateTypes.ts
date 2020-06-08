@@ -1,5 +1,5 @@
-import { ProfileProps } from "./MoleculeTypes";
 import { organismTypes } from "types";
+import { ProfileProps } from "./MoleculeTypes";
 
 interface DashboardContent {
   title: string;

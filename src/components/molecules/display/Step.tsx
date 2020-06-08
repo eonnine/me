@@ -1,8 +1,7 @@
 import React from "react";
 import { Tag } from "components/atoms/display";
-import { moleculeTypes } from "types";
 import { util } from "configs";
-import { atomTypes } from "types";
+import { atomTypes, moleculeTypes } from "types";
 
 import "styles/components/molecules/display/Step.scss";
 
@@ -10,7 +9,7 @@ function Step(props: moleculeTypes.StepProps) {
   const { label, title, tags, link, content } = props;
 
   const tagElements = tags.map((tag: atomTypes.TagProps, idx: number) => {
-    return <Tag key={idx} label={tag.label} color={tag.color} />;
+    return <Tag key={Number(idx)} label={tag.label} color={tag.color} />;
   });
 
   const openNewWindow = (url: string) => {
