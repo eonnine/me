@@ -1,6 +1,5 @@
 // ref: https://plugins.jenkins.io/kubernetes/
 podTemplate(containers: [
-    containerTemplate(name: 'node', image:'node:10.20.1', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.18.3', command: 'cat', ttyEnabled: true),
 ],
