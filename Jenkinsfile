@@ -15,13 +15,6 @@ volumes: [
             checkout scm
         }
 
-        stage('Run test') {
-            container('node') {
-                sh "npm install"
-                sh "npm run test"
-            }
-        }
-
         stage('Build and Push docker image') {
             container('docker') {
                 withCredentials([[
