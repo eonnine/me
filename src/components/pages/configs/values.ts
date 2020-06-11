@@ -84,6 +84,7 @@ export const historyValues = {
           { label: "git", color: "blue" },
           { label: "slack", color: "purple" },
           { label: "notion", color: "purple" },
+          { label: "zeplin", color: "purple" },
         ],
         content: `- 다국어 처리, 공통 컴포넌트, 차트를 포함한 프론트엔드 업무 수행`,
       },
@@ -135,7 +136,7 @@ export const introduceValues = {
 새로운 기술을 습득하는데 전혀 거부감이 없으며 습득력이 빠르다는 말을 많이 듣습니다.
 제 개발 방식에 대해 항상 의문점을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
 
-최근 관심 기술은 React Native, Blazor이며 요새 들어 프론트엔드에 끌리는 편이지만 인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
+최근 관심 기술은 React Native, Svelte이며 요새 들어 프론트엔드에 끌리는 편이지만 인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
 `,
     },
     {
