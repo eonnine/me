@@ -96,7 +96,6 @@ export const historyValues = {
       project: {
         label: "2019",
         title: "사내 IAM 관리자 서비스",
-        link: "https://github.com/eonnine/Modular",
         tags: [
           { label: "Product", color: "gold" },
           { label: "node", color: "cyan" },
