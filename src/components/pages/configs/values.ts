@@ -26,7 +26,7 @@ export const historyValues = {
       project: {
         label: "2020",
         title: "랍다 - 콘텐츠 리뷰 사이트",
-        link: "https://github.com/eonnine/labda.git",
+        link: "https://github.com/eonnine/labda-webapp",
         tags: [
           { label: "Personal", color: "gold" },
           { label: "node", color: "cyan" },

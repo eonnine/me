@@ -1,5 +1,6 @@
 // ref: https://plugins.jenkins.io/kubernetes/
 podTemplate(containers: [
+    containerTemplate(name: 'node', image:'node:10.20.1', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.18.3', command: 'cat', ttyEnabled: true),
 ],
@@ -12,6 +13,13 @@ volumes: [
         stage('Checkout github branch') {
             // Get some code from a Git repository
             checkout scm
+        }
+
+        stage('Run test') {
+            container('node') {
+                sh "npm install"
+                sh "npm run test"
+            }
         }
 
         stage('Build and Push docker image') {
