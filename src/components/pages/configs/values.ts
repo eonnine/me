@@ -22,7 +22,31 @@ export const historyValues = {
   title: "History",
   data: [
     {
-      key: "1",
+      key: "watch-clone",
+      project: {
+        label: "2020",
+        title: "랍다",
+        link: "",
+        tags: [
+          { label: "Personal", color: "gold" },
+          { label: "node", color: "cyan" },
+          { label: "express", color: "cyan" },
+          { label: "graphql", color: "cyan" },
+          { label: "react", color: "cyan" },
+          { label: "apollo", color: "cyan" },
+          { label: "material-ui", color: "volcano" },
+          { label: "jenkins", color: "volcano" },
+          { label: "docker", color: "volcano" },
+          { label: "kubernetes", color: "volcano" },
+        ],
+        content: `디자인 패턴인 Atomic Design을 적용해보고자 진행하고 있는 개인 프로젝트입니다.
+jenkins, docker, kubernetes로 CI/CD가 구성되어 있습니다.
+제목 옆의 링크를 통해서 코드를 확인하실 수 있습니다.
+`,
+      },
+    },
+    {
+      key: "pao",
       project: {
         label: "2020",
         title: "PAO 공장 에너지 관리 시스템 프론트엔드",
@@ -43,7 +67,7 @@ export const historyValues = {
       },
     },
     {
-      key: "2",
+      key: "psc",
       project: {
         label: "2020",
         title: "포스코 에너지 중개 시스템",
@@ -70,7 +94,7 @@ export const historyValues = {
       },
     },
     {
-      key: "3",
+      key: "hw",
       project: {
         label: "2019",
         title: "한화 에너지 관리 시스템 프론트엔드",
@@ -92,26 +116,7 @@ export const historyValues = {
       },
     },
     {
-      key: "5",
-      project: {
-        label: "2019",
-        title: "사내 IAM 관리자 서비스",
-        tags: [
-          { label: "Product", color: "gold" },
-          { label: "node", color: "cyan" },
-          { label: "molecular", color: "cyan" },
-          { label: "vue", color: "cyan" },
-          { label: "REST", color: "cyan" },
-          { label: "docker", color: "volcano" },
-          { label: "kubernetes", color: "volcano" },
-          { label: "GCP", color: "volcano" },
-          { label: "Firebase", color: "volcano" },
-        ],
-        content: `- 사내 IAM 관리자용 대시보드 개발`,
-      },
-    },
-    {
-      key: "4",
+      key: "ak",
       project: {
         label: "2018",
         title: "애경 화학 & 캠텍 LIMS 개발",
@@ -138,11 +143,13 @@ export const introduceValues = {
       key: "introduce",
       title: "Introduce",
       icon: require("assets/imgs/introduce.svg"),
-      content: `경력 약 3년의 주니어 개발자입니다.
-새로운 기술을 습득하는데 전혀 거부감이 없으며 습득력이 빠르다는 말을 많이 듣습니다.
-제 개발 방식에 대해 항상 의문점을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
-
+      content: `안녕하세요. 개발을 게임처럼 즐기는 경력 약 3년의 주니어 개발자입니다.
+저는 새로운 기술을 습득하는데 적극적이며 습득력이 빠르다는 평가를 자주 듣습니다.
+또한, 제 개발 방식에 대해 항상 개선 의식을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
+      
 최근 관심 기술은 React Native, Svelte이며 요새 들어 프론트엔드에 끌리는 편이지만 인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
+
+감사합니다.
 `,
     },
     {
