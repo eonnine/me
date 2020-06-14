@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { atomTypes } from "types";
+import { Loading } from "components/atoms/display";
 
 import "styles/components/atoms/general/Icon.scss";
 
@@ -14,12 +15,14 @@ function Icon(props: atomTypes.IconProps) {
 
   return (
     <div className="icon-container">
-      <img
-        src={src}
-        className={`icon ${size}`}
-        alt={alt}
-        onClick={onClickHandler}
-      />
+      <Suspense fallback={<Loading />}>
+        <img
+          src={src}
+          className={`icon ${size}`}
+          alt={alt}
+          onClick={onClickHandler}
+        />
+      </Suspense>
     </div>
   );
 }
