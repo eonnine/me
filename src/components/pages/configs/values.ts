@@ -25,8 +25,8 @@ export const historyValues = {
       key: "watch-clone",
       project: {
         label: "2020",
-        title: "랍다",
-        link: "",
+        title: "랍다 - 콘텐츠 리뷰 사이트",
+        link: "https://github.com/eonnine/labda.git",
         tags: [
           { label: "Personal", color: "gold" },
           { label: "node", color: "cyan" },
@@ -41,7 +41,7 @@ export const historyValues = {
         ],
         content: `디자인 패턴인 Atomic Design을 적용해보고자 진행하고 있는 개인 프로젝트입니다.
 jenkins, docker, kubernetes로 CI/CD가 구성되어 있습니다.
-제목 옆의 링크를 통해서 코드를 확인하실 수 있습니다.
+제목 옆의 Github 링크를 통해서 작성중인 코드를 확인하실 수 있습니다.
 `,
       },
     },
