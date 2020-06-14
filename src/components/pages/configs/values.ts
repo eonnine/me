@@ -1,7 +1,7 @@
 export const ProfileValues = {
   name: "정언구",
   position: "Junior FullStack Developer",
-  img: require("assets/imgs/profile.jpg"),
+  img: require("assets/imgs/profile.png"),
   navigations: [
     {
       key: "phone",

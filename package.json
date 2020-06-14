@@ -8,7 +8,9 @@
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "prettier": "prettier --config prettierrc.js --write src/**/*.{ts,tsx,css,scss}",
-    "lint": "eslint . --ext .js,.ts,.tsx"
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -62,5 +64,6 @@
       "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
       "git add"
     ]
-  }
+  },
+  "homepage": "http://eonnine.github.io/me"
 }
