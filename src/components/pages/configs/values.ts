@@ -34,13 +34,14 @@ export const historyValues = {
           { label: "graphql", color: "cyan" },
           { label: "react", color: "cyan" },
           { label: "apollo", color: "cyan" },
-          { label: "material-ui", color: "volcano" },
+          { label: "typescript", color: "cyan" },
+          { label: "material-ui", color: "cyan" },
           { label: "jenkins", color: "volcano" },
           { label: "docker", color: "volcano" },
           { label: "kubernetes", color: "volcano" },
         ],
         content: `디자인 패턴인 Atomic Design을 적용해보고자 진행하고 있는 개인 프로젝트입니다.
-jenkins, docker, kubernetes로 CI/CD가 구성되어 있습니다.
+백엔드 개발자 1명과 개발 중이며 저는 프론트엔드와 인프라를 담당합니다.
 제목 옆의 Github 링크를 통해서 작성중인 코드를 확인하실 수 있습니다.
 `,
       },
