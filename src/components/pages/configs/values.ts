@@ -25,24 +25,21 @@ export const historyValues = {
       key: "watch-clone",
       project: {
         label: "2020",
-        title: "랍다 - 콘텐츠 리뷰 사이트",
-        link: "https://github.com/eonnine/labda-webapp",
+        title: "CURI - 교육 앱 어플리케이션",
         tags: [
-          { label: "Personal", color: "gold" },
-          { label: "node", color: "cyan" },
-          { label: "express", color: "cyan" },
-          { label: "graphql", color: "cyan" },
-          { label: "react", color: "cyan" },
-          { label: "apollo", color: "cyan" },
-          { label: "typescript", color: "cyan" },
-          { label: "material-ui", color: "cyan" },
-          { label: "jenkins", color: "volcano" },
-          { label: "docker", color: "volcano" },
-          { label: "kubernetes", color: "volcano" },
+          { label: "Product", color: "gold" },
+          { label: "Vue", color: "cyan" },
+          { label: "Vuetify", color: "cyan" },
+          { label: "Bootstrap-vue", color: "cyan" },
+          { label: "SASS", color: "cyan" },
+          { label: "webpack", color: "green" },
+          { label: "git", color: "blue" },
+          { label: "slack", color: "purple" },
+          { label: "jira", color: "purple" },
         ],
-        content: `디자인 패턴인 Atomic Design을 적용해보고자 진행하고 있는 개인 프로젝트입니다.
-백엔드 개발자 1명과 개발 중이며 저는 프론트엔드와 인프라를 담당합니다.
-제목 옆의 Github 링크를 통해서 작성중인 코드를 확인하실 수 있습니다.
+        content: `- 하이브리드 웹앱 CURI의 웹뷰를 개발
+- 해당 서비스를 관리하는 백오피스 시스템의 프론트엔드를 담당하여 Vue의 개발 환경 구성, 아토믹 디자인 패턴을 
+  적용한 프로젝트 구조 설계, 공통 컴포넌트를 작성
 `,
       },
     },
@@ -58,6 +55,7 @@ export const historyValues = {
           { label: "apollo", color: "cyan" },
           { label: "antd", color: "cyan" },
           { label: "styled components", color: "cyan" },
+          { label: "SASS", color: "cyan" },
           { label: "echarts", color: "cyan" },
           { label: "webpack", color: "green" },
           { label: "git", color: "blue" },
@@ -148,7 +146,7 @@ export const introduceValues = {
 저는 새로운 기술을 습득하는데 적극적이며 습득력이 빠르다는 평가를 자주 듣습니다.
 또한, 제 개발 방식에 대해 항상 개선 의식을 갖고 더 나은 방향을 고민하며, 코딩 리뷰에 열린 자세를 가지고 있습니다.
       
-최근 관심 기술은 React Native, Svelte이며 요새 들어 프론트엔드에 끌리는 편이지만 인프라, 백엔드, 프론트엔드 등 영역을 가리지 않고 개발을 좋아합니다.
+최근 관심 기술은 Svelte이며 웹 접근성, 웹 표준, 반응형 웹, 크로스 브라우징 등 실력있는 프론트엔드 개발자로서 성장하는 꿈을 향해 노력하고 있습니다.
 
 감사합니다.
 `,
@@ -161,6 +159,7 @@ export const introduceValues = {
         {
           key: "frontend",
           title: "Front-End",
+          img: require("assets/imgs/skill.svg"),
           items: [
             {
               key: "html",
@@ -199,6 +198,7 @@ export const introduceValues = {
         {
           key: "backend",
           title: "Back-End",
+          img: require("assets/imgs/skill.svg"),
           items: [
             {
               key: "java",
@@ -216,11 +216,6 @@ export const introduceValues = {
               img: require("assets/imgs/node.svg"),
             },
             {
-              key: "ts",
-              label: "Typescript",
-              img: require("assets/imgs/typescript.svg"),
-            },
-            {
               key: "gq",
               label: "GraphQL",
               img: require("assets/imgs/graphql.svg"),
@@ -230,16 +225,12 @@ export const introduceValues = {
               label: "Oracle",
               img: require("assets/imgs/oracle.svg"),
             },
-            {
-              key: "mysql",
-              label: "Mysql",
-              img: require("assets/imgs/mysql.svg"),
-            },
           ],
         },
         {
           key: "etc",
           title: "Dev-Tool",
+          img: require("assets/imgs/skill.svg"),
           items: [
             {
               key: "git",
@@ -255,11 +246,6 @@ export const introduceValues = {
               key: "docker",
               label: "Docker",
               img: require("assets/imgs/docker.svg"),
-            },
-            {
-              key: "kube",
-              label: "Kubernetes",
-              img: require("assets/imgs/kubernetes.svg"),
             },
             { key: "gcp", label: "GCP", img: require("assets/imgs/gcp.svg") },
           ],
