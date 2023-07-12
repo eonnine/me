@@ -18,12 +18,12 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.3.0",
     "customize-cra": "^1.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
